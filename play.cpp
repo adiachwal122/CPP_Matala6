@@ -15,7 +15,7 @@ play :: play(char sign){
     }
     this-> sign = sign;
 }
-\
+
 play :: play(play& other){
     this-> sign = other.sign;
 }
