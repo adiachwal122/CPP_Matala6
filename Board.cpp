@@ -1,5 +1,7 @@
 #include "Board.h"
 #include "Exceptions.hpp" 
+#include <iostream>
+
 
 Board :: Board(Board& other){
     this -> num = other.num;
