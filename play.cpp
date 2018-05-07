@@ -1,4 +1,5 @@
 #include "play.hpp"
+#include "Exceptions.hpp"
 
 play :: play(){
     this-> sign = '.';
