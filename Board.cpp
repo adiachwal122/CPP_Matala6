@@ -1,5 +1,5 @@
 #include "Board.hpp"
-//#include "Exceptions.hpp" 
+#include "Exceptions.hpp" 
 
 Board :: Board(Board& other){
     this -> num = other.num;
