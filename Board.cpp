@@ -84,6 +84,7 @@ Board& Board::operator=(const Board& obj){//copy Board
         throw coordinate;
         
     }
+    return *this;
 }
 
 
