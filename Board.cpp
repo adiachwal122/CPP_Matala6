@@ -50,7 +50,7 @@ play& Board :: operator [] (Index index) {
 }
 
 char Board::operator=(char place){//play turn
-    
+    cout<< "indide Board char place"<<endl;
     if (place == '.'){
         init();
     }
@@ -65,7 +65,8 @@ char Board::operator=(char place){//play turn
 }
 
 Board& Board::operator=(const Board& obj){//copy Board
-    // cout<<"inside"<<endl;
+    cout<< "indide Board obj"<<endl;
+     
      if (obj.num == this -> num){
         this -> num = obj.num;
         for(int i = 0; i < num;i++){
