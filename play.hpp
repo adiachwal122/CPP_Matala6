@@ -18,7 +18,7 @@ class play{
         char get_sign();
         void set_sign(char);
         play& operator= (char);
-        play& operator= (play&);
+        play& operator= (play);
         friend ostream& operator<<(ostream&, play&);
         friend bool operator== (play const& x, play const& y);
         friend bool operator== (play const& x, char const& val);
