@@ -37,7 +37,16 @@ play& play ::  operator= (char sign){
 }
 
 play& play :: operator= (play& other){
-   // cout << "inside play.cpp"<< endl;
     this->set_sign(other.get_sign());
     return *this;
+}
+
+bool operator == (play const& x, play const& y){
+    return x.sign == y.sign;
+}
+bool operator== (play const& x, char const& val){
+    return x.sign==val;
+}
+bool operator== (char const& val, play const& x){
+    return x.sign==val;
 }
