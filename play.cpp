@@ -41,7 +41,7 @@ play& play ::  operator= (char s){
 
 play& play :: operator= (play other){
     cout<< "indide play 2"<<endl;
-    this->set_sign(other.get_sign());
+    this->set_sign(other.sign);
     return *this;
 }
 
