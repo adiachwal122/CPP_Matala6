@@ -1,5 +1,7 @@
 #include "play.hpp"
 #include "Exceptions.hpp"
+#include <iostream>
+
 
 play :: play(){
     this-> sign = '.';
@@ -32,7 +34,7 @@ void play :: set_sign(char sign){
 }
 
 play& play ::  operator= (char sign){
-    cout<< "indide play 1"<<endl;
+    cout<< "inside play 1"<<endl;
     this-> set_sign(sign);
     return *this;
 }
