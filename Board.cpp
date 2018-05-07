@@ -74,12 +74,13 @@ Board& Board::operator=(const Board& obj){//copy Board
             }
         }
     }
-//    else {
-     //   IllegalCoordinateException coordinate;
-        //coordinate.set_f(obj.num);
-        //coordinate.set_s(obj.num);
-//        throw coordinate;
- // }
+    else if (obj.num != this -> num)  {
+        IllegalCoordinateException coordinate;
+        coordinate.set_f(obj.num);
+        coordinate.set_s(obj.num);
+        throw coordinate;
+        
+    }
 }
 
 
