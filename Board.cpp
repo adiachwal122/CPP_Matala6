@@ -70,10 +70,9 @@ Board& Board::operator=(const Board& obj){//copy Board
     cout<< "indide Board obj"<<endl;
      
      if (obj.num == this -> num){
-       // this -> num = obj.num;
         for(int i = 0; i < num;i++){
             for(int j = 0; j < num;j++){
-                this ->mat [i][j] = obj.mat[i][j];
+                this ->mat[i][j].set_sign(obj.mat[i][j].get_sign());
             }
         }
     }
@@ -84,6 +83,7 @@ Board& Board::operator=(const Board& obj){//copy Board
         throw coordinate;
         
     }
+    
     return *this;
 }
 
