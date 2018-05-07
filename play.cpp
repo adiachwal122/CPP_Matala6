@@ -33,14 +33,12 @@ void play :: set_sign(char sign){
         this-> sign = sign;
 }
 
-play& play ::  operator= (char s){
-    cout<< "inside play 1"<<endl;
+play& play ::  operator = (char s){
     this-> set_sign(s);
     return *this;
 }
 
-play& play :: operator= (play other){
-    cout<< "indide play 2"<<endl;
+play& play :: operator = (play& other){
     this->set_sign(other.sign);
     return *this;
 }
