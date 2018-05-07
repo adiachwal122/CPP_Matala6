@@ -18,6 +18,10 @@ class play{
         play& operator= (char);
         play& operator= (play&);
         friend ostream& operator<<(ostream&, play&);
+        friend bool operator== (play const& x, play const& y);
+        friend bool operator== (play const& x, char const& val);
+        friend bool operator== (char const& val, play const& x);
+
 };
 
 inline ostream& operator<<(ostream& os, play& pl){
