@@ -1,4 +1,8 @@
+#ifndef _PLAY_HPP
+#define _PLAY_HPP
+#include <sstream>
 #include "Exceptions.hpp"
+using namespace std;
 
 class play{
     private:
@@ -20,3 +24,5 @@ inline ostream& operator<<(ostream& os, play& pl){
 	    os << pl.get_sign() << endl;
         return os;
 }
+
+#endif
