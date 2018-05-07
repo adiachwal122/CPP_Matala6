@@ -1,9 +1,14 @@
+#ifndef _BOARD_HPP
+#define _BOARD_HPP
+
 #include <iostream>
 using namespace std;
 #include <string>
 #include <sstream>
-#include "Index.cpp"
-#include "play.cpp"
+#include "Index.h"
+#include "play.hpp"
+
+class play;
 
 class Board{
   
@@ -37,3 +42,4 @@ inline ostream&  operator<<(ostream& out, const Board& a){
     return out;
 }
 
+#endif
