@@ -3,6 +3,8 @@
 #include <sstream>
 #include "Exceptions.hpp"
 using namespace std;
+#include <iostream>
+
 
 class play{
     private:
