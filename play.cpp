@@ -17,7 +17,7 @@ play :: play(char sign){
 }
 
 play :: play(play& other){
-    this-> sign = other.sign;
+    this-> sign = other.get_sign();
 }
         
 char play :: get_sign(){
