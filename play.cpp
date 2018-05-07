@@ -33,9 +33,9 @@ void play :: set_sign(char sign){
     this-> sign = sign;
 }
 
-play& play ::  operator= (char sign){
+play& play ::  operator= (char s){
     cout<< "inside play 1"<<endl;
-    this-> set_sign(sign);
+    this-> set_sign(s);
     return *this;
 }
 
