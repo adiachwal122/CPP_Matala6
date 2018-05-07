@@ -52,7 +52,6 @@ play& Board :: operator [] (Index index) {
 }
 
 char Board::operator=(char place){//play turn
-    cout<< "indide Board char place"<<endl;
     if (place == '.'){
         init();
     }
@@ -67,8 +66,7 @@ char Board::operator=(char place){//play turn
 }
 
 Board& Board::operator=(const Board& obj){//copy Board
-    cout<< "indide Board obj"<<endl;
-     
+
      if (obj.num == this -> num){
         for(int i = 0; i < num;i++){
             for(int j = 0; j < num;j++){
@@ -76,7 +74,7 @@ Board& Board::operator=(const Board& obj){//copy Board
             }
         }
     }
-    else if (obj.num != this -> num)  {
+    else if (obj.num != this -> num){
         IllegalCoordinateException coordinate;
         coordinate.set_f(obj.num);
         coordinate.set_s(obj.num);
@@ -98,7 +96,6 @@ bool operator== (Board const& x, Board const& y){
                 return false;
         }
     }
-
     return true;
 }
 
@@ -112,6 +109,5 @@ bool operator!= (Board const& x, Board const& y){
                 return true;
         }
     }
-
     return false;
 }
