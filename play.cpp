@@ -29,8 +29,8 @@ void play :: set_sign(char sign){
         ch.set_t(sign);
         throw ch;
     }
-    
-    this-> sign = sign;
+    else
+        this-> sign = sign;
 }
 
 play& play ::  operator= (char s){
