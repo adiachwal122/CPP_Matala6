@@ -1,5 +1,5 @@
-#ifndef _BOARD_HPP
-#define _BOARD_HPP
+#ifndef _BOARD_H
+#define _BOARD_H
 
 #include <iostream>
 using namespace std;
