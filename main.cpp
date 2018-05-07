@@ -1,4 +1,4 @@
-#include "Board.cpp"
+#include "Board.hpp"
 #include <iostream>
 using namespace std;
 
@@ -40,7 +40,6 @@ int main() {
 	} catch (const IllegalCharException& ex) {
 		cout << "Illegal char: " << ex.theChar() << endl;  // "Illegal char: x"
 	}
-    
 	Board board2 = board1;
 	board2[{0,0}] = 'X';
 	cout << board1 << endl;  /* Shows an empty board, as above */
