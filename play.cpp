@@ -35,13 +35,13 @@ void play :: set_sign(char sign){
 
 play& play ::  operator= (char s){
     cout<< "inside play 1"<<endl;
-    this-> sign = s;
+    this-> set_sign(s);
     return *this;
 }
 
 play& play :: operator= (play& other){
     cout<< "indide play 2"<<endl;
-    this-> sign = other.sign;
+    this->set_sign(other.get_sign());
     return *this;
 }
 
