@@ -1,7 +1,7 @@
 CCX=g++ -std=c++11
 
 
-a.out: Board.o Index.o play.o Exceptions.o 
+a.out: Board.o Index.o play.o  
 		$(CCX) main.cpp *.o
 		
 Board.o: Board.cpp Board.h
