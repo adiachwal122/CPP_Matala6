@@ -70,7 +70,7 @@ Board& Board::operator=(const Board& obj){//copy Board
     cout<< "indide Board obj"<<endl;
      
      if (obj.num == this -> num){
-        this -> num = obj.num;
+       // this -> num = obj.num;
         for(int i = 0; i < num;i++){
             for(int j = 0; j < num;j++){
                 this ->mat [i][j] = obj.mat[i][j];
