@@ -39,6 +39,7 @@ play& Board :: operator [] (Index index) {
         coordinate.set_f(index.row);
         coordinate.set_s(index.column);
         throw coordinate;
+        cout<< "in"<< endl;
     }
     if (index.row < 0 || index.column < 0 ){
         IllegalCoordinateException coordinate;
@@ -77,4 +78,33 @@ Board& Board::operator=(const Board& obj){//copy Board
     else {
         cout<<"Error, Board size isn't identical"<<endl;
     }
+}
+
+
+bool operator== (Board const& x, Board const& y){
+    if (x.num != y.num)
+        return false;
+
+    for (int i = 0; i < x.num ; ++i) {
+        for (int j = 0; j < x.num ; ++j) {
+            if(x.mat[i][j].get_sign() != y.mat[i][j].get_sign())
+                return false;
+        }
+    }
+
+    return true;
+}
+
+bool operator!= (Board const& x, Board const& y){
+    if (x.num != y.num)
+        return true;
+
+    for (int i = 0; i <x.num ; ++i) {
+        for (int j = 0; j <x.num ; ++j) {
+            if(x.mat[i][j].get_sign() != y.mat[i][j].get_sign())
+                return true;
+        }
+    }
+
+    return false;
 }
