@@ -1,3 +1,6 @@
+#ifndef _INDEX_H
+#define _INDEX_H
+
 #include <iostream>
 using namespace std;
 #include <string>
@@ -13,4 +16,5 @@ class Index{
         Index(int, int);
        
 };
-   
+
+#endif
