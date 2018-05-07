@@ -29,6 +29,8 @@ class Board{
     play& operator[](Index);
     Board& operator=(const Board&);
     char operator=(char);
+    friend bool operator== (Board const& x, Board const& y);
+    friend bool operator!= (Board const& x, Board const& y);
     
 };
 
