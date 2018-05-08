@@ -24,11 +24,15 @@ class Board{
     Board(Board&);//copy c'tor
     
     Board (int);
+    ~Board();
+    void del();
+    
     void init();
     friend ostream& operator<<(ostream&, const Board&);
     play& operator[](Index);
+    play operator[](Index) const;
     Board& operator=(const Board&);
-    char operator=(char);
+    Board& operator=(char);
     friend bool operator== (Board const& x, Board const& y);
     friend bool operator!= (Board const& x, Board const& y);
     
