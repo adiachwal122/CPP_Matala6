@@ -43,12 +43,18 @@ play& play :: operator = (play& other){
     return *this;
 }
 
-bool operator == (play const& x, play const& y){
-    return x.sign == y.sign;
+bool play::operator==(char c1) const {
+    return sign==c1;
 }
-bool operator== (play const& x, char const& val){
-    return x.sign==val;
+
+bool play::operator!=(char c1) const {
+    return sign!=c1;
 }
-bool operator== (char const& val, play const& x){
-    return x.sign==val;
+    
+bool play::operator==(const play &c1) const {
+    return sign==c1.sign;
+}
+    
+bool play::operator!=(const play &c1) const {
+    return sign!=c1.sign;
 }
