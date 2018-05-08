@@ -20,9 +20,10 @@ class play{
         play& operator= (char);
         play& operator= (play&);
         friend ostream& operator<<(ostream&, play&);
-        friend bool operator== (play const& x, play const& y);
-        friend bool operator== (play const& x, char const& val);
-        friend bool operator== (char const& val, play const& x);
+        bool operator==(char ) const;
+        bool operator!=(char ) const;
+        bool operator==(const play&) const;
+        bool operator!=(const play&) const;
 
 };
 
