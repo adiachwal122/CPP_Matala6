@@ -19,6 +19,8 @@ class play{
         void set_sign(char);
         play& operator= (char);
         play& operator= (play&);
+        operator char() const { return sign; }
+
         friend ostream& operator<<(ostream&, play&);
         bool operator==(char ) const;
         bool operator!=(char ) const;
